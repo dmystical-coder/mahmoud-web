@@ -127,6 +127,14 @@ main p {
   font-weight: 400;
 }
 
+main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main h2 {
   padding: 1rem;
   color: #1e1e1e;
@@ -151,6 +159,9 @@ main > p {
   line-height: normal;
 }
 
+main > img {
+  width: 80%;
+}
 .pos-agents {
   display: flex;
   justify-content: center;
@@ -158,7 +169,7 @@ main > p {
   gap: 3rem;
 }
 
-.agent{
+.agent {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -177,6 +188,43 @@ main > p {
   box-shadow: 9px 4px 50px 0px rgba(0, 0, 0, 0.25);
 }
 
+.features {
+  margin: 3rem 2rem 0;
+  display: flex;
+  padding: 0.5rem;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 1.875rem;
+  background: #fff;
+  box-shadow: 0px 9px 50px -19px rgba(0, 0, 0, 0.25);
+}
+
+.features > h2 {
+  color: #1e1e1e;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.features > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features div > p {
+  color: #1e1e1e;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .testimonials {
   margin-top: 4rem;
   background-color: #eee159;
@@ -187,6 +235,7 @@ main > p {
 }
 
 .testimonial-section-title {
+  font-size: 1.25rem;
   margin-top: -1.2rem;
   display: inline-flex;
   padding: 0.5rem;
@@ -196,10 +245,9 @@ main > p {
 
   color: #1e1e1e;
   text-align: center;
-  font-size: 0.875rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .testimonials-card {
