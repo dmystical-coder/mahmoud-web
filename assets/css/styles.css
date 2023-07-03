@@ -24,6 +24,12 @@ nav {
   align-items: center;
 }
 
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .hidden {
   display: none;
 }
@@ -61,6 +67,7 @@ nav {
 .hero-iii > p,
 .hero-iv > p,
 .hero-v > p {
+  margin-top: 0.75rem;
   color: #1e1e1e;
   text-align: center;
   font-size: 1rem;
@@ -165,7 +172,7 @@ main > img {
 .pos-agents {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   gap: 3rem;
 }
 
@@ -191,7 +198,7 @@ main > img {
 .features {
   margin: 3rem 2rem 0;
   display: flex;
-  padding: 0.5rem;
+  padding: 2rem 1rem;
   width: 90%;
   flex-direction: column;
   justify-content: center;
@@ -238,7 +245,7 @@ main > img {
   font-size: 1.25rem;
   margin-top: -1.2rem;
   display: inline-flex;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.625rem;
   background: #fff;
   box-shadow: 1px 1px 14px 0px rgba(0, 0, 0, 0.25);
