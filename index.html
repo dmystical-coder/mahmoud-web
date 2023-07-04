@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMS</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/mobile.css">
+    <link rel="stylesheet" href="./assets/css/desktop.css">
 </head>
 
 <body>
@@ -16,47 +18,105 @@
                 <div class="logo">
                     <img src="./assets/img/sms-logo.png" alt="sms-logo">
                 </div>
-                <img src="./assets/icons/ham-icon.svg" alt="Hamburger menu">
-                <ul class="hidden">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                <img class="desktop-hidden" src="./assets/icons/ham-icon.svg" alt="Hamburger menu">
+                <ul class="hidden nav">
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
                     <li><a href="#">SMS Edu</a></li>
+                    <li><a href="#">SMS Product</a></li>
                 </ul>
             </nav>
 
             <div class="carousel-container">
-                <div class="hero-i carousel-item">
-                    <h1>Bringing Financial Convenience to YOU!</h1>
-                    <p>Say goodbye to long queues and Hello to on-demand cash transactions. </p>
+                <div class="hero-i hero-i-mobile hero-i-desktop carousel-item">
+                    <h1 style="color: #eee159;">Bringing Financial Convenience to YOU!</h1>
+                    <p style="color: #FFFFFF;">Say goodbye to long queues and Hello to on-demand cash transactions. </p>
+
+                    <div class="mobile-hidden testimonials-card">
+                        <img src="./assets/img/person-1.svg" alt="">
+                        <div class="content">
+                            <p>Ever since I have learnt about SMS, my money related transactions has always been with
+                                them.
+                                <span>- Tunde Samuel</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero-ii carousel-item">
+                <div class="hero-ii hero-ii-mobile hero-ii-desktop carousel-item">
                     <h1>Financial Convenience
                         at Your Fingertips</h1>
                     <p>Experience the ease of POS services anywhere on campus. Say goodbye to long queues and hello to
                         financial convenience.</p>
+
+                    <div class="mobile-hidden testimonials-card" style="background-color: #1E1E1E;">
+                        <img src="./assets/img/person-2.svg" alt="">
+                        <div class="content">
+                            <p style="color: #FFFFFF;">
+                                I do wish SMS can operate outside the campus premises cos omooo!
+
+                                <span>- James Mauton</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero-iii carousel-item">
+                <div class="hero-iii hero-iii-mobile hero-iii-desktop carousel-item">
                     <h1>Exceptional Service, Every Time</h1>
                     <p>At SMS, we pride ourselves on delivering exceptional service with every transaction. Our
                         dedicated team goes above and beyond to ensure your experience is seamless and worthwile.</p>
+
+                    <div class="mobile-hidden testimonials-card" style="background-color: #1E1E1E;">
+                        <img src="./assets/img/person-3.svg" alt="">
+                        <div class="content">
+                            <p style="color: #EEE159;">If you haven't used SMS service, what will I tell you other than,
+                                “Dey play!”
+                                <span>- Rebecca</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="hero-iv carousel-item">
-                    <h1>Enabling Your
+                <div class="hero-iv hero-iv-mobile hero-iv-desktop carousel-item">
+                    <h1 style="color: #FFFFFF;">Enabling Your
                         Financial Freedom</h1>
-                    <p>SMS empowers you to take control of your financial transactions. With our innovative mobile
+                    <p style="color: #eee159;">SMS empowers you to take control of your financial transactions. With our
+                        innovative mobile
                         POS
                         platform, you have the power to withdraw, deposit, and access a range of services whenever
                         and
                         wherever you need them.</p>
+
+                    <div class="mobile-hidden testimonials-card">
+                        <img src="./assets/img/person-1.svg" alt="">
+                        <div class="content">
+                            <p>I thought I was going to trek home today until a friend told me about SMS, it all
+                                happened like flash!
+
+                                <span>- Lekan</span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="carousel-item hero-v">
+                <div class="carousel-item hero-v hero-v-mobile hero-v-desktop">
                     <h1>Reliable and Secure Mobile POS Solutions </h1>
                     <p>Trust SMS for secure and reliable mobile POS services. Our dedicated agents deliver top-notch
                         solutions with utmost professionalism, ensuring your transactions are handled with care.</p>
+
+                    <div class="mobile-hidden testimonials-card" style="background-color: #1E1E1E;">
+                        <img src="./assets/img/person-2.svg" alt="">
+                        <div class="content">
+                            <p style="color: #FFFFFF;">Na person wey never sabi dey queue for ATM, with very little
+                                charges, SMS don sort me!
+
+                                <span>- John</span>
+                            </p>
+
+
+                        </div>
+                    </div>
                 </div>
 
 
@@ -66,32 +126,40 @@
 
         <main>
 
-
-            <img src="./assets/img/ambassador.png" alt="">
-            <p>SMS have successfully served over <span style="font-weight: bold;">1,500</span> customers within the
+            <p class="stats">SMS have successfully served over <span style="font-weight: bold;">1,500</span> customers
+                within the
                 Campus and still counting...</p>
 
-            <h2>
-                Do YOU need instant <span>CASH</span>?
-            </h2>
+            <div class="cta">
+                <img src="./assets/img/ambassador.png" alt="">
 
-            <p>
-                Connect with our fast and reliable
-                agents to get it sorted in less time.
-            </p>
+                <div class="cta-content">
 
-            <div class="pos-agents">
-                <div class="agent">
-                    <img src="./assets/img/pos-agent-i.png" alt="">
-                    <a href="#">SMS Agent 1</a>
-                </div>
-                <div class="agent">
-                    <img src="./assets/img/pos-agent-ii.png" alt="">
-                    <a href="#">SMS Agent 2</a>
+                    <div class="cta-text">
+                        <h2>
+                            Do YOU need instant <span>CASH</span>?
+                        </h2>
+
+                        <p>
+                            Connect with our fast and reliable
+                            agents to get it sorted in less time.
+                        </p>
+                    </div>
+
+                    <div class="pos-agents">
+                        <div class="agent">
+                            <img src="./assets/img/pos-agent-i.png" alt="">
+                            <a href="#">SMS Agent 1</a>
+                        </div>
+                        <div class="agent">
+                            <img src="./assets/img/pos-agent-ii.png" alt="">
+                            <a href="#">SMS Agent 2</a>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="features">
+            <!-- <div class="features">
                 <h2>Our Services</h2>
                 <div>
                     <img src="./assets/icons/pos-icon.png" alt="">
@@ -107,9 +175,9 @@
                     <img src="./assets/icons/books 1.png" alt="">
                     <p>SMS Educational Services</p>
                 </div>
-            </div>
+            </div> -->
 
-            <section class="testimonials">
+            <section class="testimonials desktop-hidden">
 
                 <h3 class="testimonial-section-title">Why you should Trust SMS</h3>
 
@@ -175,19 +243,30 @@
 
             <section class="product-pack">
                 <div class="product-img-container">
-                    <img class="productItem" src="./assets/img/product-pack-i.png" alt="">
-                    <img class="productItem" src="./assets/img/product-pack-ii.png" alt="">
+                    <picture class="productItem">
+                        <source media="(min-width:767px)" srcset="./assets/img/product-pack-img-i-desktop.png">
+
+                        <img src="./assets/img/product-pack-i.png" alt="Flowers">
+                    </picture>
+
+                    <picture class="productItem">
+                        <source media="(min-width:767px)" srcset="./assets/img/product-pack-img-ii-desktop.png">
+
+                        <img src="./assets/img/product-pack-ii.png" alt="Flowers">
+                    </picture>
                 </div>
-                <h2>SMS Product Pack</h2>
+                <div class="product-pack-content">
+                    <h2>SMS Product Pack</h2>
 
-                <p>
-                    SMS Products are packaged food items that are made available to students at an affordable cost.
-                    Three different food items are made available in an SMS Product package. One of the food items
-                    provides you with up to four varieties of food for consumption, while the remaining two give you
-                    other tasty food options. Each SMS Product package can sustain a student throughout a week.
-                </p>
+                    <p>
+                        SMS Products are packaged food items that are made available to students at an affordable cost.
+                        Three different food items are made available in an SMS Product package. One of the food items
+                        provides you with up to four varieties of food for consumption, while the remaining two give you
+                        other tasty food options. Each SMS Product package can sustain a student throughout a week.
+                    </p>
 
-                <a href="#">Join the product discussion</a>
+                    <a href="#">Join the product discussion</a>
+                </div>
             </section>
         </main>
 
